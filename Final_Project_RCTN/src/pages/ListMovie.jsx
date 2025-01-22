@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux"
-import { getAllMovies } from "../store/action";
+import { getAllMovies, searchMovies } from "../store/action";
 import {Link, useParams} from "react-router"
 import './list.css'
 
@@ -10,11 +10,20 @@ export default function List(){
     
     const dispatch = useDispatch()
 
-    const {param} = useParams()
+    const {param, query} = useParams()
 
     useEffect(()=>{
-        param ? dispatch(getAllMovies(param)) : dispatch(getAllMovies())
-    },[param])
+        // console.log(query,"===> query");
+        // console.log(param,"===> param");
+
+        if(query){
+            dispatch(searchMovies(query))
+        }else if(param){
+            dispatch(getAllMovies(param)) 
+        }else{
+            dispatch(getAllMovies())
+        }
+    },[param, query])
 
     
     return(
