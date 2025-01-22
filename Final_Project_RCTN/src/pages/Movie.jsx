@@ -13,9 +13,9 @@ export default function Movie(){
     const dispatch = useDispatch()
 
     useEffect(()=>{
-        console.log("amjad masuk");
+        // console.log("amjad masuk");
         setDatadetail(detailMovies)
-        console.log(detailMovies,"=====>datadetail");
+        // console.log(detailMovies,"=====>datadetail");
         
     },[detailMovies]) 
 

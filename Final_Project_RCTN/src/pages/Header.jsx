@@ -96,7 +96,6 @@ export default function Header(){
                     </ul>
                     <form className="d-flex" onSubmit={handleSearch}>
                         <input className="form-control me-2" type="search" value={query} onChange={(e)=> {setQuery(e.target.value)}} placeholder="Search" aria-label="Search"/>
-                        
                         <button className="btn btn-outline-light" type="submit">Search</button>
                         
                     </form>
