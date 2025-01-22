@@ -94,7 +94,7 @@ export default function Movie(){
                         
                         <div className="mb-4">
                             <div className="d-flex align-items-center">
-                                <label className="me-2">Quantity:</label>
+                                <label className="me-2">Ticket Quantity:</label>
                                 <select className="form-select w-auto">
                                         <option>1</option>
                                         <option>2</option>
@@ -108,7 +108,7 @@ export default function Movie(){
                         <div className="d-grid gap-2">
                             <button className="btn btn-primary" type="button">Add to Cart</button>
                             <button className="btn btn-outline-secondary" type="button">
-                                    <i className="far fa-heart me-2"></i>Add to Wishlist
+                                    <i className="far fa-heart me-2"></i>Add to Wishlist Movie
                                 </button>
                         </div>
 
@@ -116,7 +116,7 @@ export default function Movie(){
                         <div className="mt-4">
                             <div className="d-flex align-items-center mb-2">
                                 <i className="fas fa-truck text-primary me-2"></i>
-                                <span>Free shipping on orders over $50</span>
+                                <span>Buy 1 Free 1 ticket for this Movie</span>
                             </div>
                             <div className="d-flex align-items-center mb-2">
                                 <i className="fas fa-undo text-primary me-2"></i>

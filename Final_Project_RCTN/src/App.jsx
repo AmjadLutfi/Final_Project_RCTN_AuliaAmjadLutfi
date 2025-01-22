@@ -15,6 +15,7 @@ function App() {
     <>
       <Header/>
       <Routes>
+        <Route path='/' element={<List/>}/>
         <Route path='/:param' element={<List/>}/>
         <Route path='/movie/:id' element={<Movie/>}/>
       </Routes>

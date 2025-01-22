@@ -13,9 +13,10 @@ export default function List(){
     const {param} = useParams()
 
     useEffect(()=>{
-        dispatch(getAllMovies(param))
+        param ? dispatch(getAllMovies(param)) : dispatch(getAllMovies())
     },[param])
 
+    
     return(
         <>
             <div className="container py-5">
