@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import './header.css'
-import { Link, Links, NavLink, useNavigate } from "react-router";
-import {} from "react-redux"
+import { NavLink, useNavigate } from "react-router";
 
 
 export default function Header(){
@@ -15,7 +14,6 @@ export default function Header(){
         }else{
             navigate(`/`)
         }
-       
     }
 
     return(
@@ -97,7 +95,6 @@ export default function Header(){
                     <form className="d-flex" onSubmit={handleSearch}>
                         <input className="form-control me-2" type="search" value={query} onChange={(e)=> {setQuery(e.target.value)}} placeholder="Search" aria-label="Search"/>
                         <button className="btn btn-outline-light" type="submit">Search</button>
-                        
                     </form>
                 </div>
             </nav>
